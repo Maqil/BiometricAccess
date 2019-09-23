@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E7060AE233907DB007FDDB9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E7060AD233907DB007FDDB9 /* main.cpp */; };
+		1E7060C123390920007FDDB9 /* db_plugin_sqlite.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E7060B523390920007FDDB9 /* db_plugin_sqlite.c */; };
+		1E7060C223390920007FDDB9 /* dllcall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E7060B623390920007FDDB9 /* dllcall.cpp */; };
+		1E7060C323390920007FDDB9 /* BiometricServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E7060B923390920007FDDB9 /* BiometricServer.c */; };
+		1E7060C423390920007FDDB9 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E7060BA23390920007FDDB9 /* sqlite3.c */; };
+		1E7060C523390920007FDDB9 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E7060BC23390920007FDDB9 /* stdafx.cpp */; };
+		1E7060C623390920007FDDB9 /* wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E7060BF23390920007FDDB9 /* wrapper.cpp */; };
+		1E7060C723390920007FDDB9 /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E7060C023390920007FDDB9 /* mongoose.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +30,19 @@
 
 /* Begin PBXFileReference section */
 		1E7060AA233907DB007FDDB9 /* BiometricAccess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BiometricAccess; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E7060AD233907DB007FDDB9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1E7060B423390920007FDDB9 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		1E7060B523390920007FDDB9 /* db_plugin_sqlite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = db_plugin_sqlite.c; sourceTree = "<group>"; };
+		1E7060B623390920007FDDB9 /* dllcall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dllcall.cpp; sourceTree = "<group>"; };
+		1E7060B723390920007FDDB9 /* db_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = db_plugin.h; sourceTree = "<group>"; };
+		1E7060B823390920007FDDB9 /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
+		1E7060B923390920007FDDB9 /* BiometricServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BiometricServer.c; sourceTree = "<group>"; };
+		1E7060BA23390920007FDDB9 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		1E7060BB23390920007FDDB9 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		1E7060BC23390920007FDDB9 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
+		1E7060BD23390920007FDDB9 /* dllcall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dllcall.h; sourceTree = "<group>"; };
+		1E7060BE23390920007FDDB9 /* wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrapper.h; sourceTree = "<group>"; };
+		1E7060BF23390920007FDDB9 /* wrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wrapper.cpp; sourceTree = "<group>"; };
+		1E7060C023390920007FDDB9 /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +75,19 @@
 		1E7060AC233907DB007FDDB9 /* BiometricAccess */ = {
 			isa = PBXGroup;
 			children = (
-				1E7060AD233907DB007FDDB9 /* main.cpp */,
+				1E7060B923390920007FDDB9 /* BiometricServer.c */,
+				1E7060B523390920007FDDB9 /* db_plugin_sqlite.c */,
+				1E7060B723390920007FDDB9 /* db_plugin.h */,
+				1E7060B623390920007FDDB9 /* dllcall.cpp */,
+				1E7060BD23390920007FDDB9 /* dllcall.h */,
+				1E7060C023390920007FDDB9 /* mongoose.c */,
+				1E7060B823390920007FDDB9 /* mongoose.h */,
+				1E7060BA23390920007FDDB9 /* sqlite3.c */,
+				1E7060BB23390920007FDDB9 /* sqlite3.h */,
+				1E7060BC23390920007FDDB9 /* stdafx.cpp */,
+				1E7060B423390920007FDDB9 /* stdafx.h */,
+				1E7060BF23390920007FDDB9 /* wrapper.cpp */,
+				1E7060BE23390920007FDDB9 /* wrapper.h */,
 			);
 			path = BiometricAccess;
 			sourceTree = "<group>";
@@ -118,7 +148,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E7060AE233907DB007FDDB9 /* main.cpp in Sources */,
+				1E7060C323390920007FDDB9 /* BiometricServer.c in Sources */,
+				1E7060C223390920007FDDB9 /* dllcall.cpp in Sources */,
+				1E7060C123390920007FDDB9 /* db_plugin_sqlite.c in Sources */,
+				1E7060C423390920007FDDB9 /* sqlite3.c in Sources */,
+				1E7060C523390920007FDDB9 /* stdafx.cpp in Sources */,
+				1E7060C723390920007FDDB9 /* mongoose.c in Sources */,
+				1E7060C623390920007FDDB9 /* wrapper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
